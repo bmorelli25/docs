@@ -161,14 +161,14 @@
     <script type="text/javascript">
       var active;
       
-      active = Math.random() < 1
+      active = Math.random() < 0.1
       
       elasticApm.init({
       active: active,
-      serviceName: "elastic-co-frontend",
+      serviceName: "elastic-co-test",
       serverUrl: "https://elastic-co-apm-server.app.elstc.co"
       })
-      elasticApm.setTags({env:"production"});
+      elasticApm.setTags({env:"staging"});
       elasticApm.setInitialPageLoadName(window.location.href);
     </script>
     
@@ -625,9 +625,9 @@
 </li><li class="listitem">
 <a class="ulink" href="6.x/index.html" target="_top">Packetbeat Reference: 6.x</a>
 </li><li class="listitem">
-<a class="ulink" href="6.4/index.html" target="_top">Packetbeat Reference: 6.4</a>
+<a class="ulink" href="current/index.html" target="_top">Packetbeat Reference: 6.4 (current)</a>
 </li><li class="listitem">
-<a class="ulink" href="current/index.html" target="_top">Packetbeat Reference: 6.3 (current)</a>
+<a class="ulink" href="6.3/index.html" target="_top">Packetbeat Reference: 6.3</a>
 </li><li class="listitem">
 <a class="ulink" href="6.2/index.html" target="_top">Packetbeat Reference: 6.2</a>
 </li><li class="listitem">

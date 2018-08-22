@@ -162,14 +162,14 @@
     <script type="text/javascript">
       var active;
       
-      active = Math.random() < 1
+      active = Math.random() < 0.1
       
       elasticApm.init({
       active: active,
-      serviceName: "elastic-co-frontend",
+      serviceName: "elastic-co-test",
       serverUrl: "https://elastic-co-apm-server.app.elstc.co"
       })
-      elasticApm.setTags({env:"production"});
+      elasticApm.setTags({env:"staging"});
       elasticApm.setInitialPageLoadName(window.location.href);
     </script>
     
@@ -896,7 +896,7 @@ Kibana will bind to this port and redirect all http requests to https over the p
 </dd><dt><span class="term">
 <code class="literal">server.ssl.supportedProtocols:</code>
 </span></dt><dd>
-<span class="strong strong"><strong>Default: TLSv1, TLSv1.1, TLSv1.2</strong></span>  Supported protocols with versions. Valid protocols: <code class="literal">TLSv1</code>, <code class="literal">TLSv1.1</code>, <code class="literal">TLSv1.2</code>
+<span class="strong strong"><strong>Default: TLSv1, TLSv1.1, TLSv1.2</strong></span>  An array of supported protocols with versions. Valid protocols: <code class="literal">TLSv1</code>, <code class="literal">TLSv1.1</code>, <code class="literal">TLSv1.2</code>
 </dd><dt><span class="term">
 <code class="literal">status.allowAnonymous:</code>
 </span></dt><dd>

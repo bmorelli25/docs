@@ -162,14 +162,14 @@
     <script type="text/javascript">
       var active;
       
-      active = Math.random() < 1
+      active = Math.random() < 0.1
       
       elasticApm.init({
       active: active,
-      serviceName: "elastic-co-frontend",
+      serviceName: "elastic-co-test",
       serverUrl: "https://elastic-co-apm-server.app.elstc.co"
       })
-      elasticApm.setTags({env:"production"});
+      elasticApm.setTags({env:"staging"});
       elasticApm.setInitialPageLoadName(window.location.href);
     </script>
     
@@ -753,7 +753,7 @@ aggregations return normalized values:</p><div class="pre_wrapper"><pre class="p
   },
   "hits": {
     "total": 3,
-    "max_score": 0.0,
+    "max_score": null,
     "hits": []
   },
   "aggregations": {

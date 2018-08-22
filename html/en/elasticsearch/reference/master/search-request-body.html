@@ -162,14 +162,14 @@
     <script type="text/javascript">
       var active;
       
-      active = Math.random() < 1
+      active = Math.random() < 0.1
       
       elasticApm.init({
       active: active,
-      serviceName: "elastic-co-frontend",
+      serviceName: "elastic-co-test",
       serverUrl: "https://elastic-co-apm-server.app.elstc.co"
       })
-      elasticApm.setTags({env:"production"});
+      elasticApm.setTags({env:"staging"});
       elasticApm.setInitialPageLoadName(window.location.href);
     </script>
     
@@ -781,7 +781,7 @@ be set to <code class="literal">true</code> in the response.</p><div class="pre_
   },
   "hits": {
     "total": 1,
-    "max_score": 0.0,
+    "max_score": null,
     "hits": []
   }
 }</pre></div><p>The <code class="literal">took</code> time in the response contains the milliseconds that this request
