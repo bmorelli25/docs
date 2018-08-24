@@ -162,14 +162,14 @@
     <script type="text/javascript">
       var active;
       
-      active = Math.random() < 0.1
+      active = Math.random() < 1
       
       elasticApm.init({
       active: active,
-      serviceName: "elastic-co-test",
+      serviceName: "elastic-co-frontend",
       serverUrl: "https://elastic-co-apm-server.app.elstc.co"
       })
-      elasticApm.setTags({env:"staging"});
+      elasticApm.setTags({env:"production"});
       elasticApm.setInitialPageLoadName(window.location.href);
     </script>
     
